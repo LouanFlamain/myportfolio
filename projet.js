@@ -7,6 +7,7 @@ let $backgroundEffect = document.querySelector("#background-effect");
 let $cardImg = document.querySelector("#card-img");
 let $cardTitle = document.querySelector("#card-title");
 let $cardDesc = document.querySelector("#card-desc");
+let $cardLink = document.querySelector(".lien_projet");
 
 $paint.addEventListener("click", function () {
   console.log("test paint");
@@ -15,6 +16,8 @@ $paint.addEventListener("click", function () {
   $cardDesc.textContent =
     "Le projet paint est un projet qui a été réalisé après 1 mois et demi après le début des cours, il consistait à recréer un site dans lequel nous pouvons générer : des carrés, des ronds, des triangles et du texte.";
   $cardContainer.classList.remove("is-hidden");
+  $navbarReset();
+  $cardLink.setAttribute("href", "https://cine-wave.netlify.app/");
 });
 $cinewave.addEventListener("click", function () {
   console.log("test cine");
@@ -23,6 +26,7 @@ $cinewave.addEventListener("click", function () {
   $cardDesc.textContent =
     "Le projet Netflix consistait à recréer un faux site de streaming (sans player) et avec un concept original. Le site fonctionne à l'aide d'une API et possède un système de recherche de films, un système de recherche par courant cinématographique, ainsi qu'un bouton permettant de chosir un film aléatoire par catégorie.";
   $cardContainer.classList.remove("is-hidden");
+  $navbarReset();
 });
 $react.addEventListener("click", function () {
   $cardContainer.classList.remove("is-hidden");
@@ -30,6 +34,7 @@ $react.addEventListener("click", function () {
   $cardTitle.textContent = "Projet React";
   $cardDesc.textContent =
     "Projet en finalisation de conception // dbaubuiaoubaobcoabobcboabocboa";
+  $navbarReset();
 });
 
 let $btnDuHome = document.querySelector(".btn_home");
@@ -37,4 +42,5 @@ let $btnDuHome = document.querySelector(".btn_home");
 $btnDuHome.addEventListener("click", function () {
   $backgroundEffect.classList.remove("blur");
   $cardContainer.classList.add("is-hidden");
+  $navbarReset();
 });

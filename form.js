@@ -50,9 +50,12 @@ var $date = function () {
   }
 };
 
-$navbarCruse.addEventListener("click", function () {
+let $navbarReset = function () {
   $navbarCruse.classList.toggle("is-active");
   $navbarBasicExemple.classList.toggle("is-active");
+};
+$navbarCruse.addEventListener("click", function () {
+  $navbarReset();
 });
 
 $btnMoins.addEventListener("click", function () {
