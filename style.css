@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background {
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+.background-link {
+  background-image: url(./img/The-Cliffs-1-dragged.webp);
+}
+.blur {
+  backdrop-filter: blur(4px);
+  height: 100%;
+  width: 100%;
+}
+.is-absolute {
+  position: absolute;
+}
+.btn-top {
+  top: 0%;
+  left: 50%;
+}
+.btn-right {
+  top: 50%;
+  right: 0%;
+}
+.btn-bottom {
+  left: 50%;
+  bottom: 0%;
+}
+.btn-left {
+  top: 50%;
+  left: 0%;
+}
+.text-align-center {
+  text-align: center;
+}
+.is-fixed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 40%;
+  min-width: 400px;
+}
+.is-hidden {
+  display: none;
+}
