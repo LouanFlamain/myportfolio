@@ -81,3 +81,21 @@ $btnPlus.addEventListener("click", function () {
   //$date();
   //$textChange.textContent = $datetext;
 });
+
+let $mycall = function () {
+  if ($count == $backgroundTab.length - 1) {
+    $count = 0;
+  } else {
+    $count++;
+  }
+  console.log($count);
+  $background.style.backgroundImage = "url(" + $backgroundTab[$count] + ")";
+};
+//setInterval($mycall, 5000);
+
+let $buildPopup = document.querySelector(".build-info");
+let $delete = document.querySelector(".delete");
+
+$delete.addEventListener("click", function () {
+  $buildPopup.classList.add("is-hidden");
+});
