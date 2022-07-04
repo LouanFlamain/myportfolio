@@ -3,7 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: black;
+}
 .background {
+  background-color: black;
   background-position: center;
   background-size: cover;
   position: fixed;
@@ -13,9 +17,7 @@
   height: 100%;
   transform: translate(-50%, -50%);
 }
-.background-link {
-  background-image: url(./img/The-Cliffs-1-dragged.webp);
-}
+
 .blur {
   backdrop-filter: blur(4px);
   height: 100%;
