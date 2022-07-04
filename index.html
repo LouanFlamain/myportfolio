@@ -14,7 +14,7 @@
         <div class="background background-link">
           <div id="background-effect"></div>
         </div>
-        <div class="build-info">
+        <!-- <div class="build-info">
           <article class="message is-info">
             <div class="message-header">
               <p>Info</p>
@@ -24,7 +24,7 @@
               site actuellement en cours de développement...
             </div>
           </article>
-        </div>
+        </div>-->
         <div class="container">
           <div id="header">
             <nav
@@ -73,21 +73,32 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="navbar-end">
-                  <div class="navbar-item">
-                    <div class="buttons">
-                      <div class="button-text text-align-center">
-                        <p>Heure actuelle :</p>
-                        <p class="text-change"></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </nav>
           </div>
-          <p></p>
+
+          <div id="time_meter" class="is-absolute-center">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">Heure Actuelle ⏱</p>
+                <button class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </header>
+              <div class="card-content">
+                <div class="content text-align-center">
+                  <p id="main-horloge"></p>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <a id="btn_moins" href="#" class="card-footer-item">-</a>
+                <a id="btn_sync" href="#" class="card-footer-item">Sync</a>
+                <a id="btn_plus" href="#" class="card-footer-item">+</a>
+              </footer>
+            </div>
+          </div>
         </div>
 
         <div class="card-project is-fixed is-hidden">

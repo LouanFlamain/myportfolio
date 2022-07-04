@@ -1,7 +1,8 @@
 var $navbarBasicExemple = document.querySelector("#navbarBasicExample");
 var $navbarCruse = document.querySelector("#navbar-cruse");
-
-var $textChange = document.querySelector(".text-change");
+var $btnMoins = document.querySelector("#btn_moins");
+var $btnPlus = document.querySelector("#btn_plus");
+var $btnSync = document.querySelector("#btn_sync");
 var $background = document.querySelector(".background");
 
 var $backgroundTab = [
@@ -14,7 +15,9 @@ var $backgroundTab = [
   "./img/The-Cliffs-3-dragged.webp",
 ];
 var $lake = ["./img/The-Lake-1-dragged.webp"];
+var $mainHorloge = document.querySelector("#main-horloge");
 var now = new Date();
+var $hourSync = now.getHours();
 var $hour = now.getHours();
 var $minute = now.getMinutes();
 var $secondes = now.getSeconds();
@@ -34,12 +37,17 @@ var $test = function () {
         $minute = 0;
         $secondes = 0;
       }
+      if ($hourSync != 24) {
+        $hourSync++;
+      } else {
+        $hourSync = 0;
+      }
     }
   }
 
   $backgroundTime();
   console.log($hour, $minute, $secondes);
-  $textChange.textContent = $hour + " : " + $minute + " : " + $secondes;
+  $mainHorloge.textContent = $hour + " : " + $minute + " : " + $secondes;
 };
 let $number = 1;
 do {
@@ -86,6 +94,23 @@ $backgroundTime = function () {
     $background.style.backgroundImage = "url(" + $backgroundTab[6] + ")";
   }
 };
+$btnMoins.addEventListener("click", function () {
+  if ($hour == 0) {
+    $hour = 23;
+  } else {
+    $hour = $hour - 1;
+  }
+});
+$btnPlus.addEventListener("click", function () {
+  if ($hour == 23) {
+    $hour = 0;
+  } else {
+    $hour++;
+  }
+});
+$btnSync.addEventListener("click", function () {
+  $hour = $hourSync;
+});
 var init = 0;
 
 var $count = 0;
