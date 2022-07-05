@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../bulma.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>portfolio -- à propos de moi</title>
+  </head>
+  <body>
+    <div class="background background-link">
+      <div id="background-effect"></div>
+    </div>
+    <div class="container">
+      <div id="header">
+        <nav class="navbar p-2" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item btn_home">
+              <img
+                src="https://bulma.io/images/bulma-logo.png"
+                width="112"
+                height="28"
+              />
+            </a>
+
+            <a
+              id="navbar-cruse"
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item btn_home" href="../index.html"> Home </a>
+
+              <a class="navbar-item"> A propos de moi </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link"> Projets </a>
+
+                <div class="navbar-dropdown">
+                  <a id="btn_paint" class="navbar-item"> Paint </a>
+                  <a id="btn_cinewave" class="navbar-item"> Ciné-Wave </a>
+                  <a id="btn_react" class="navbar-item"> React </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item"> Report an issue </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <script src="./second.js"></script>
+  </body>
+</html>
