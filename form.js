@@ -14,7 +14,6 @@ var $backgroundTab = [
   "./img/The-Cliffs-2-dragged.webp",
   "./img/The-Cliffs-3-dragged.webp",
 ];
-var $lake = ["./img/The-Lake-1-dragged.webp"];
 var $mainHorloge = document.querySelector("#main-horloge");
 var now = new Date();
 var $hourSync = now.getHours();
