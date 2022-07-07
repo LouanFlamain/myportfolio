@@ -45,7 +45,7 @@ var $test = function () {
   }
 
   $backgroundTime();
-  console.log($hour, $minute, $secondes);
+  //console.log($hour, $minute, $secondes);
   $mainHorloge.textContent = $hour + " : " + $minute + " : " + $secondes;
 };
 let $number = 1;
@@ -158,11 +158,29 @@ let $mycall = function () {
 };
 //setInterval($mycall, 5000);
 
-let $buildPopup = document.querySelector(".build-info");
-let $delete = document.querySelector(".delete");
-
-$delete.addEventListener("click", function () {
-  $buildPopup.classList.add("is-hidden");
-});
-
 //https://iphoneaddict.fr/post/news-305783-macos-11-0-1-inclut-nouveaux-fonds-decran-voici
+
+//presentation du fonctionnement :
+
+let $tstHide = document.querySelector(".tst_btn");
+let $tstProperties = document.querySelector(".tst_properties");
+let isDisplay = true;
+
+$tstHide.addEventListener("click", function () {
+  console.log("ca marche");
+  if (isDisplay == true) {
+    isDisplay = false;
+    $tstProperties.style.transform = "translate(-50%, -52px)";
+    $tstHide.textContent = "Afficher";
+  } else {
+    isDisplay = true;
+    $tstProperties.style.transform = "translate(-50%, 68px)";
+    $tstHide.textContent = "Masquer";
+  }
+});
+let $tstHideTime = function () {
+  isDisplay = false;
+  $tstProperties.style.transform = "translate(-50%, -52px)";
+  $tstHide.textContent = "Afficher";
+};
+setTimeout($tstHideTime, 10000);

@@ -25,84 +25,92 @@
             </div>
           </article>
         </div>-->
-        <div class="container">
-          <div id="header">
-            <nav
-              class="navbar p-2"
-              role="navigation"
-              aria-label="main navigation"
-            >
-              <div class="navbar-brand">
-                <a class="navbar-item btn_home">
-                  <img
-                    src="https://bulma.io/images/bulma-logo.png"
-                    width="112"
-                    height="28"
-                  />
+        <div id="header">
+          <nav
+            class="navbar p-2"
+            role="navigation"
+            aria-label="main navigation"
+          >
+            <div class="navbar-brand">
+              <a class="navbar-item btn_home">
+                <img
+                  src="https://bulma.io/images/bulma-logo.png"
+                  width="112"
+                  height="28"
+                />
+              </a>
+
+              <a
+                id="navbar-cruse"
+                role="button"
+                class="navbar-burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navbarBasicExample"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item btn_home"> Home </a>
+
+                <a class="navbar-item" href="./page_secondaire/secondaire.html">
+                  A propos de moi
                 </a>
 
-                <a
-                  id="navbar-cruse"
-                  role="button"
-                  class="navbar-burger"
-                  aria-label="menu"
-                  aria-expanded="false"
-                  data-target="navbarBasicExample"
-                >
-                  <span aria-hidden="true"></span>
-                  <span aria-hidden="true"></span>
-                  <span aria-hidden="true"></span>
-                </a>
-              </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link"> Projets </a>
 
-              <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start">
-                  <a class="navbar-item btn_home"> Home </a>
-
-                  <a
-                    class="navbar-item"
-                    href="./page_secondaire/secondaire.html"
-                  >
-                    A propos de moi
-                  </a>
-
-                  <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link"> Projets </a>
-
-                    <div class="navbar-dropdown">
-                      <a id="btn_paint" class="navbar-item"> Paint </a>
-                      <a id="btn_cinewave" class="navbar-item"> Ciné-Wave </a>
-                      <a id="btn_react" class="navbar-item"> React </a>
-                      <hr class="navbar-divider" />
-                      <a class="navbar-item"> Report an issue </a>
-                    </div>
+                  <div class="navbar-dropdown">
+                    <a id="btn_paint" class="navbar-item"> Paint </a>
+                    <a id="btn_cinewave" class="navbar-item"> Ciné-Wave </a>
+                    <a id="btn_react" class="navbar-item"> React </a>
+                    <hr class="navbar-divider" />
+                    <a class="navbar-item"> Report an issue </a>
                   </div>
                 </div>
               </div>
-            </nav>
-          </div>
-
-          <div id="time_meter" class="is-absolute-center">
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">Heure Actuelle ⏱</p>
-                <button class="card-header-icon" aria-label="more options">
-                  <span class="icon">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </button>
-              </header>
-              <div class="card-content">
-                <div class="content text-align-center">
-                  <p id="main-horloge"></p>
-                </div>
-              </div>
-              <footer class="card-footer">
-                <a id="btn_moins" href="#" class="card-footer-item">-</a>
-                <a id="btn_sync" href="#" class="card-footer-item">Sync</a>
-                <a id="btn_plus" href="#" class="card-footer-item">+</a>
-              </footer>
             </div>
+          </nav>
+        </div>
+
+        <div class="tst_properties">
+          <div
+            class="tst_square p-3 is-flex is-justify-content-center is-align-items-center"
+          >
+            <p class="has-text-centered has-shadow">
+              Ce site est mon portfolio professionnel. Selon l'heure d'accès au
+              site le fond ne sera pas le même. Je t'invite à utiliser les
+              boutons "+" et "-" pour tous les tester.
+            </p>
+          </div>
+          <button class="tst_btn button is-info">Masquer</button>
+        </div>
+
+        <div id="time_meter" class="is-absolute-center">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">Heure Actuelle ⏱</p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div class="card-content">
+              <div class="content text-align-center">
+                <p id="main-horloge"></p>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a id="btn_moins" href="#" class="card-footer-item">-</a>
+              <a id="btn_sync" href="#" class="card-footer-item">Sync</a>
+              <a id="btn_plus" href="#" class="card-footer-item">+</a>
+            </footer>
           </div>
         </div>
 
