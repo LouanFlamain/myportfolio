@@ -185,4 +185,4 @@ let $tstHideTime = function () {
     $tstHide.textContent = "Afficher";
   }
 };
-setTimeout($tstHideTime, 10000);
+setTimeout($tstHideTime, 7000);
