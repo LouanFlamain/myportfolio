@@ -124,7 +124,7 @@ $paint.addEventListener("click", function () {
   $cardContainer.classList.remove("is-hidden");
   $aboutMeContainer.classList.add("is-hidden");
   $navbarReset();
-  $cardLink.setAttribute("href", "https://cine-wave.netlify.app/");
+  $cardLink.setAttribute("href", "../projet_paint/index.html");
 });
 $cinewave.addEventListener("click", function () {
   console.log("test cine");
@@ -134,6 +134,7 @@ $cinewave.addEventListener("click", function () {
     "Le projet Netflix consistait à recréer un faux site de streaming (sans player) et avec un concept original. Le site fonctionne à l'aide d'une API et possède un système de recherche de films, un système de recherche par courant cinématographique, ainsi qu'un bouton permettant de chosir un film aléatoire par catégorie.";
   $cardContainer.classList.remove("is-hidden");
   $aboutMeContainer.classList.add("is-hidden");
+  $cardLink.setAttribute("href", "https://cine-wave.netlify.app/");
   $navbarReset();
 });
 $react.addEventListener("click", function () {
@@ -141,8 +142,9 @@ $react.addEventListener("click", function () {
   $backgroundEffect.classList.add("blur");
   $cardTitle.textContent = "Projet React";
   $cardDesc.textContent =
-    "Projet en finalisation de conception // dbaubuiaoubaobcoabobcboabocboa";
+    "Projet en finalisation de conception // Site e-commerce fait en React";
   $aboutMeContainer.classList.add("is-hidden");
+  $cardLink.setAttribute("href", "#");
   $navbarReset();
 });
 

@@ -113,7 +113,7 @@ let $cardLink = document.querySelector(".lien_projet");
 
 let $timeMeter = document.querySelector("#time_meter");
 
-let $aboutMeContainer = document.querySelector(".about-me-container");
+let $cardContactContainer = document.querySelector(".card-contact-container");
 
 $paint.addEventListener("click", function () {
   console.log("test paint");
@@ -122,9 +122,9 @@ $paint.addEventListener("click", function () {
   $cardDesc.textContent =
     "Le projet paint est un projet qui a été réalisé après 1 mois et demi après le début des cours, il consistait à recréer un site dans lequel nous pouvons générer : des carrés, des ronds, des triangles et du texte.";
   $cardContainer.classList.remove("is-hidden");
-  $aboutMeContainer.classList.add("is-hidden");
+  $cardContactContainer.classList.add("is-hidden");
   $navbarReset();
-  $cardLink.setAttribute("href", "https://cine-wave.netlify.app/");
+  $cardLink.setAttribute("href", "../projet_paint/index.html");
 });
 $cinewave.addEventListener("click", function () {
   console.log("test cine");
@@ -133,7 +133,8 @@ $cinewave.addEventListener("click", function () {
   $cardDesc.textContent =
     "Le projet Netflix consistait à recréer un faux site de streaming (sans player) et avec un concept original. Le site fonctionne à l'aide d'une API et possède un système de recherche de films, un système de recherche par courant cinématographique, ainsi qu'un bouton permettant de chosir un film aléatoire par catégorie.";
   $cardContainer.classList.remove("is-hidden");
-  $aboutMeContainer.classList.add("is-hidden");
+  $cardContactContainer.classList.add("is-hidden");
+  $cardLink.setAttribute("href", "https://cine-wave.netlify.app/");
   $navbarReset();
 });
 $react.addEventListener("click", function () {
@@ -141,8 +142,9 @@ $react.addEventListener("click", function () {
   $backgroundEffect.classList.add("blur");
   $cardTitle.textContent = "Projet React";
   $cardDesc.textContent =
-    "Projet en finalisation de conception // dbaubuiaoubaobcoabobcboabocboa";
-  $aboutMeContainer.classList.add("is-hidden");
+    "Projet en finalisation de conception // Site e-commerce fait en React";
+  $cardContactContainer.classList.add("is-hidden");
+  $cardLink.setAttribute("href", "#");
   $navbarReset();
 });
 
@@ -151,6 +153,6 @@ let $btnContactPage = document.querySelector("#contact-page");
 $btnContactPage.addEventListener("click", function () {
   $backgroundEffect.classList.remove("blur");
   $cardContainer.classList.add("is-hidden");
-  $aboutMeContainer.classList.remove("is-hidden");
+  $cardContactContainer.classList.remove("is-hidden");
   $navbarReset();
 });
