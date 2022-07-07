@@ -214,6 +214,7 @@ let $tstHideTime = function () {
     isDisplay = false;
     $tstProperties.style.transform = "translate(-50%, -52px)";
     $tstHide.textContent = "Afficher";
+    $timeMeter.style.top = "50%";
   }
 };
 setTimeout($tstHideTime, 7000);
