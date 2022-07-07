@@ -201,10 +201,12 @@ $tstHide.addEventListener("click", function () {
     isDisplay = false;
     $tstProperties.style.transform = "translate(-50%, -52px)";
     $tstHide.textContent = "Afficher";
+    $timeMeter.style.top = "50%";
   } else {
     isDisplay = true;
     $tstProperties.style.transform = "translate(-50%, 68px)";
     $tstHide.textContent = "Masquer";
+    $timeMeter.style.top = "80%";
   }
 });
 let $tstHideTime = function () {
