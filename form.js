@@ -179,8 +179,10 @@ $tstHide.addEventListener("click", function () {
   }
 });
 let $tstHideTime = function () {
-  isDisplay = false;
-  $tstProperties.style.transform = "translate(-50%, -52px)";
-  $tstHide.textContent = "Afficher";
+  if (isDisplay == true) {
+    isDisplay = false;
+    $tstProperties.style.transform = "translate(-50%, -52px)";
+    $tstHide.textContent = "Afficher";
+  }
 };
 setTimeout($tstHideTime, 10000);
