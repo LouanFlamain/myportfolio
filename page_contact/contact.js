@@ -5,13 +5,13 @@ var $btnPlus = document.querySelector("#btn_plus");
 var $background = document.querySelector(".background");
 
 var $backgroundTab = [
-  "../img/The-Beach-1-dragged.webp",
-  "../img/The-Beach-5-dragged.webp",
-  "../img/The-Beach-6-dragged.webp",
-  "../img/The-Beach-4-dragged.webp",
-  "../img/The-Beach-8-dragged.webp",
-  "../img/The-Beach-2-dragged.webp",
-  "../img/The-Beach-3-dragged.webp",
+  "../img/The-Lake-1-dragged.webp",
+  "../img/The-Lake-5-dragged.webp",
+  "../img/The-Lake-6-dragged.webp",
+  "../img/The-Lake-4-dragged.webp",
+  "../img/The-Lake-8-dragged.webp",
+  "../img/The-Lake-2-dragged.webp",
+  "../img/The-Lake-3-dragged.webp",
 ];
 var $mainHorloge = document.querySelector("#main-horloge");
 var now = new Date();
@@ -146,9 +146,9 @@ $react.addEventListener("click", function () {
   $navbarReset();
 });
 
-let $btnAboutPage = document.querySelector("#about-page");
+let $btnContactPage = document.querySelector("#contact-page");
 
-$btnAboutPage.addEventListener("click", function () {
+$btnContactPage.addEventListener("click", function () {
   $backgroundEffect.classList.remove("blur");
   $cardContainer.classList.add("is-hidden");
   $aboutMeContainer.classList.remove("is-hidden");

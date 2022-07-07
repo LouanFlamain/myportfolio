@@ -46,12 +46,39 @@ var $test = function () {
 
   $backgroundTime();
   //console.log($hour, $minute, $secondes);
-  $mainHorloge.textContent = $hour + " : " + $minute + " : " + $secondes;
+  if ($secondes < 10 && $minute < 10 && $hour < 10) {
+    $mainHorloge.textContent =
+      "0" + $hour + " : " + "0" + $minute + " : " + "0" + $secondes;
+  }
+  if ($secondes > 10 && $minute < 10 && $hour < 10) {
+    $mainHorloge.textContent =
+      "0" + $hour + " : " + "0" + $minute + " : " + $secondes;
+  }
+  if ($secondes < 10 && $minute > 10 && $hour < 10) {
+    $mainHorloge.textContent =
+      "0" + $hour + " : " + $minute + " : " + "0" + $secondes;
+  }
+  if ($secondes > 10 && $minute > 10 && $hour < 10) {
+    $mainHorloge.textContent =
+      "0" + $hour + " : " + $minute + " : " + $secondes;
+  }
+  if ($secondes < 10 && $minute < 10 && $hour > 10) {
+    $mainHorloge.textContent =
+      $hour + " : " + "0" + $minute + " : " + "0" + $secondes;
+  }
+  if ($secondes > 10 && $minute < 10 && $hour > 10) {
+    $mainHorloge.textContent =
+      $hour + " : " + "0" + $minute + " : " + $secondes;
+  }
+  if ($secondes < 10 && $minute > 10 && $hour > 10) {
+    $mainHorloge.textContent =
+      $hour + " : " + $minute + " : " + "0" + $secondes;
+  }
+  if ($secondes > 10 && $minute > 10 && $hour > 10) {
+    $mainHorloge.textContent = $hour + " : " + $minute + " : " + $secondes;
+  }
 };
-let $number = 1;
-do {
-  $test;
-} while ($number != 1);
+setTimeout($test);
 setInterval($test, 1000);
 $backgroundTime = function () {
   if ($hour === 7 || $hour === 8) {
@@ -99,6 +126,7 @@ $btnMoins.addEventListener("click", function () {
   } else {
     $hour = $hour - 1;
   }
+  $mainHorloge.textContent = $hour + " : " + $minute + " : " + $secondes;
 });
 $btnPlus.addEventListener("click", function () {
   if ($hour == 23) {
@@ -106,6 +134,7 @@ $btnPlus.addEventListener("click", function () {
   } else {
     $hour++;
   }
+  $mainHorloge.textContent = $hour + " : " + $minute + " : " + $secondes;
 });
 $btnSync.addEventListener("click", function () {
   $hour = $hourSync;

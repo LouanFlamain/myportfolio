@@ -92,3 +92,15 @@ body {
 .tst_btn {
   width: 35%;
 }
+.who-i-am,
+.who-about-me {
+  width: 400px;
+}
+.content-size {
+  height: 420px;
+}
+
+.image-cover {
+  object-fit: cover;
+  object-position: center;
+}

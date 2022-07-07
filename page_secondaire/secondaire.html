@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../bulma.css" />
     <link rel="stylesheet" href="../style.css" />
-    <title>portfolio -- à propos de moi</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/adobe-portfolio.png"
+    />
+
+    <title>Louan Flamain -- About me</title>
   </head>
   <body>
     <div class="background background-link">
@@ -41,7 +48,15 @@
           <div class="navbar-start">
             <a class="navbar-item btn_home" href="../index.html"> Home </a>
 
-            <a class="navbar-item"> A propos de moi </a>
+            <a id="about-page" class="navbar-item"> A propos de moi </a>
+
+            <a
+              id="contact-page"
+              class="navbar-item"
+              href="../page_contact/contact.html"
+            >
+              Me contacter
+            </a>
 
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link"> Projets </a>
@@ -56,10 +71,212 @@
             </div>
           </div>
         </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a
+                class="button is-primary is-outlined"
+                href="./img/CV-cor.pdf"
+                download="./img/CV-cor.pdf"
+              >
+                <strong>Download CV</strong>
+              </a>
+            </div>
+          </div>
+        </div>
       </nav>
     </div>
     <div class="message-work"></div>
 
+    <div class="card-project is-fixed is-hidden">
+      <div class="card mt-6">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p id="card-title" class="title is-4">Projet</p>
+            </div>
+          </div>
+
+          <div id="card-desc" class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            nec iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
+            <a href="#">#responsive</a>
+            <br />
+            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+          </div>
+          <div class="card">
+            <footer class="card-footer">
+              <a href="#" target="_blank" class="lien_projet card-footer-item"
+                >Accéder au Site</a
+              >
+              <a href="#" class="card-footer-item">Edit</a>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-me-container">
+      <div class="is-flex is-justify-content-space-evenly is-flex-wrap-wrap">
+        <div class="who-i-am mt-6">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  class="image-cover"
+                  src="../img/IMG_8767.jpg"
+                  alt="Placeholder image"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="../img/IMG_8766.jpg" alt="Placeholder image" />
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Louan Flamain</p>
+                  <p class="subtitle is-6">@Louan_Flamain</p>
+                </div>
+              </div>
+
+              <div class="content">
+                Actuellement étudiant chez Hetic et à la recherche d'une
+                alternance en tant que dév fullstack ou front end. <a>#dev</a>
+                <a href="#">#css/scss</a>
+                <a href="#">#javascript</a>
+                <a href="#">#react</a>
+                <a href="#">#php</a>
+                <a href="#">#mySql</a>
+                <a href="#">#responsive</a>
+                <br />
+                <time datetime="2002-09-22">12:30 - 22 Sep 2002</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="who-about-me mt-6">
+          <div class="card">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="../img/IMG_8766.jpg" alt="Placeholder image" />
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Louan Flamain</p>
+                  <p class="subtitle is-6">@Louan_Flamain</p>
+                </div>
+              </div>
+
+              <div class="content content-size">
+                Compétences :
+                <ul>
+                  <li>Html</li>
+                  <li>Css</li>
+                  <li>Scss</li>
+                  <li>Js</li>
+                  <li>React</li>
+                  <li>PHP (un peu)</li>
+                  <li>MySql et Sqlite3 (un peu)</li>
+                  <li>Git</li>
+                  <li>Figma</li>
+                </ul>
+                <a href="#">#Code</a> <a href="#">#Language</a>
+                <a href="#">#Dev</a> <a href="#">#Technologie</a>
+                <a href="#">#Compétences</a>
+                <br />
+                <time datetime="2002-09-22">12:30 - 22 Sep 2002</time>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="is-flex is-justify-content-space-evenly is-flex-wrap-wrap">
+        <div class="who-about-me mt-6">
+          <div class="card">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="../img/IMG_8766.jpg" alt="Placeholder image" />
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Louan Flamain</p>
+                  <p class="subtitle is-6">@Louan_Flamain</p>
+                </div>
+              </div>
+
+              <div class="content content-size">
+                Centres d'intérêts :
+                <ul>
+                  <li>La musique</li>
+                  <li>La programmation</li>
+                  <li>L'automobile</li>
+                  <li>L'espace</li>
+                  <li>Le cinéma</li>
+                  <li>Les jeux vidéos</li>
+                  <li>Le ping pong</li>
+                  <li>Les sciences du numérique</li>
+                  <li>La street-food</li>
+                </ul>
+                <a href="#">#Hobby</a> <a href="#">#Music</a>
+                <a href="#">#Dev</a> <a href="#">#Technologie</a>
+                <a href="#">#Plaisir</a>
+                <br />
+                <time datetime="2002-09-22">12:30 - 22 Sep 2002</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="who-about-me mt-6">
+          <div class="card">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="../img/IMG_8766.jpg" alt="Placeholder image" />
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Louan Flamain</p>
+                  <p class="subtitle is-6">@Louan_Flamain</p>
+                </div>
+              </div>
+
+              <div class="content content-size">
+                Formations scolaires :
+                <ul>
+                  <li>Dut GEII IUT de Chartres (2020-2021)</li>
+                  <li>
+                    Bachelor développement web, Hetic (Montreuil) (2021-2022)
+                  </li>
+                </ul>
+                Expériences professionnelles :
+                <ul>
+                  <li>
+                    Travail chez intérim.com pendant les grandes vacances en
+                    tant qu'employé de bureau, 2 années de suite.
+                  </li>
+                  <li>employé de rayon chez carrefour (été 2022)</li>
+                </ul>
+                <a href="#">#DUT</a> <a href="#">#IUT</a>
+                <a href="#">#Chartres</a> <a href="#">#Bachelor</a>
+                <a href="#">#Montreuil</a> <a href="#">#Hetic</a>
+                <a href="#">#Interim.com</a> <a href="#">#Carrefour</a>
+                <a href="#">#Work</a>
+                <br />
+                <time datetime="2002-09-22">12:30 - 22 Sep 2002</time>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./second.js"></script>
   </body>
 </html>
